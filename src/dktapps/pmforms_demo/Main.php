@@ -102,7 +102,7 @@ class Main extends PluginBase implements Listener{
 				new MenuOption("Option 2", new FormIcon("textures/blocks/acacia_trapdoor.png", FormIcon::IMAGE_TYPE_PATH)),
 
 				/* menu option with URL icon - this should point to a valid online image URL */
-				new MenuOption("Option 3", new FormIcon("https://avatars3.githubusercontent.com/u/14214667", FormIcon::IMAGE_TYPE_URL))
+				new MenuOption("Option 3", new FormIcon("https://pbs.twimg.com/profile_images/776551947595833345/Og1CSz_c_400x400.jpg", FormIcon::IMAGE_TYPE_URL))
 			],
 
 			/**
