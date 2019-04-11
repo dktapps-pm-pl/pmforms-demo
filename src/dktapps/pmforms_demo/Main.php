@@ -18,18 +18,13 @@ use dktapps\pmforms\MenuOption;
 use dktapps\pmforms\ModalForm;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\event\Listener;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 use function count;
 use function print_r;
 
-class Main extends PluginBase implements Listener{
-
-	public function onEnable() : void{
-		$this->getServer()->getPluginManager()->registerEvents($this, $this);
-	}
+class Main extends PluginBase{
 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
 		if($command->getName() === "form" and count($args) >= 1){
