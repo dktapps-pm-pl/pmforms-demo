@@ -55,6 +55,7 @@ class Main extends PluginBase{
 			if(empty($players)){
 				if(!($sender instanceof Player)){
 					$sender->sendMessage(TextFormat::RED . "Please provide some players to send the form to!");
+					return true;
 				}
 				$players[] = $sender;
 			}
