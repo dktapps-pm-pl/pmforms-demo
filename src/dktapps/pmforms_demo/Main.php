@@ -50,6 +50,7 @@ class Main extends PluginBase{
 					$sender->sendMessage(TextFormat::RED . "Can't find a player by partial name " . $args[$argIdx]);
 					return true;
 				}
+				$players[] = $player;
 			}
 			if(empty($players)){
 				if(!($sender instanceof Player)){
