@@ -18,7 +18,7 @@ use dktapps\pmforms\MenuOption;
 use dktapps\pmforms\ModalForm;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 use function count;
@@ -45,7 +45,7 @@ class Main extends PluginBase{
 
 			$players = [];
 			for($argIdx = 1; isset($args[$argIdx]); ++$argIdx){
-				$player = $this->getServer()->getPlayer($args[$argIdx]);
+				$player = $this->getServer()->getPlayerByPrefix($args[$argIdx]);
 				if($player === null){
 					$sender->sendMessage(TextFormat::RED . "Can't find a player by partial name " . $args[$argIdx]);
 					return true;
