@@ -84,8 +84,8 @@ class Main extends PluginBase{
 				/* callback to execute when the player submits the form */
 				$this->getServer()->broadcastMessage($submitter->getName() . " chose " . ($choice ? "YES" : "NO"));
 			},
-			"YES", /* title of button YES */
-			"NO" /* title of button NO */
+			"YES", /* text to show on the "Yes" button, defaults to client-translated "Yes" string, this is optional */
+			"NO" /* text to show on the "No" button, defaults to client-translated "No" string, this is optional */
 		);
 	}
 
