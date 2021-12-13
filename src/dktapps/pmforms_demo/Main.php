@@ -83,7 +83,9 @@ class Main extends PluginBase{
 			function(Player $submitter, bool $choice) : void{
 				/* callback to execute when the player submits the form */
 				$this->getServer()->broadcastMessage($submitter->getName() . " chose " . ($choice ? "YES" : "NO"));
-			}
+			},
+			"YES", /* title of button YES */
+			"NO" /* title of button NO */
 		);
 	}
 
