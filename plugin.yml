@@ -1,7 +1,7 @@
 name: pmforms-demo
 main: dktapps\pmforms_demo\Main
 version: 0.0.1
-api: 4.0.0
+api: [4.0.0, 5.0.0]
 load: POSTWORLD
 author: dktapps
 description: Demo plugin that shows off in-game forms, and how to use its API via code
